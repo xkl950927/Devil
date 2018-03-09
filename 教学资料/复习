@@ -1,0 +1,16 @@
+1、ctx.fillText("你要绘制的文字",x,y);
+   ctx.strokeText("你要绘制的文字",x,y);
+   ctx.font = "15px 微软雅黑"
+   ctx.fillStyle = "red";
+   ctx.strokeStyle ="orange";
+   ctx.lineWidth = 10;
+
+   var img = new Image()/document.createElement("img");
+   img.src="xxx";
+   img.onload=function(){
+      ctx.drawImage(img,sx,sy,sw,sh,x,y,w,h);
+   }
+2、小游戏思路
+(function(){
+    Game[canvas,setup(init),init(Background,Ball,Bricks,Paddle,animate),animate(draw),draw(Background,Ball,Bricks,Paddle)]
+})()
